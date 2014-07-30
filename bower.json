@@ -1,19 +1,21 @@
 {
-  "name": "seed-element",
+  "name": "uvalib-stacks-direct",
   "version": "0.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
   ],
   "description": "Element providing solution to no problem in particular.",
   "keywords": "seed, polymer, web-components",
-  "main": "seed-element.html",
+  "main": "uvalib-stacks-direct.html",
   "license": "MIT",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/uvalib-components/uvalib-stacks-direct/",
   "ignore": [
     "**/.*"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.3.3",
-    "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3"
+    "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3",
+    "google-sheets": "GoogleWebComponents/google-sheets#~0.0.2",
+    "sprintf": "~1.0.0"
   }
 }
