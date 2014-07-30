@@ -16,6 +16,8 @@
     "polymer": "Polymer/polymer#~0.3.3",
     "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3",
     "google-sheets": "GoogleWebComponents/google-sheets#~0.0.2",
-    "sprintf": "~1.0.0"
+    "sprintf": "~1.0.0",
+    "paper-input":"Polymer/paper-input",
+    "core-header-panel":"Polymer/core-header-panel"
   }
 }
