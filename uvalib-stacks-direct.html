@@ -35,19 +35,37 @@ Element providing solution to no problem in particular.
        */
       callnumber: '',
 
-      desttitle:'foo',
-      floor:'',
-      area:'',
-      direct:'',
-      
       /**
-       * `fancy` is a property that does something fancy.
+       * The `desttitle` attribute sets the title of the returned destination 
        * 
-       * @property fancy
-       * @type bool
-       * @default false
+       * @attribute desttitle
+       * @type string
        */
-      fancy: false,
+      desttitle:'foo',
+
+      /**
+       * The `floor` attribute sets the floor in alderan that the destination is on
+       * 
+       * @attribute floor
+       * @type string
+       */
+      floor:'',
+
+      /**
+       * The `area` attribute sets the area in the stacks to take (which elevator) 
+       * 
+       * @attribute area
+       * @type string
+       */
+      area:'',
+
+      /**
+       * The `directions` attribute sets a friendly directions string 
+       * 
+       * @attribute direct
+       * @type string
+       */
+      direct:'',
 
       ready: function() {
         // Ready is a lifecycle callback.
@@ -56,36 +74,16 @@ Element providing solution to no problem in particular.
       },
 
       /**
-       * The `sayHello` method will return a greeting.
+       * The `directions-loaded` event is fired when the spreadsheet is in hand
        * 
-       * @method sayHello
-       * @param {String} greeting Pass in a specific greeting.
-       * @return {String} Returns a string greeting.
-       */
-      sayHello: function(greeting) {
-        var response = greeting || 'Hello World!';
-        return 'seed-element says, ' + response;
-      },
-
-      /**
-       * The `seed-element-lasers-success` event is fired whenever we
-       * call fireLasers.
-       * 
-       * @event seed-element-lasers-success
-       * @param {Object} detail
-       *   @param {string} detail.sound An amazing sound.
+       * @event directions-loaded
        */
 
       /**
-       * The `fireLasers` method will fire the lasers. At least
-       * it will dispatch an event that claims lasers were fired :)
+       * The `sheetLoaded` method will fire when the spreadsheet is in hand
        * 
-       * @method fireLasers
+       * @method sheetLoaded
        */
-      fireLasers: function() {
-        this.fire('seed-element-lasers-success', { sound: 'Pew pew pew!' });
-      },
-
       sheetLoaded: function(){
         this.fire('directions-loaded',{});
       },
