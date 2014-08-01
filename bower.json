@@ -15,7 +15,7 @@
   "dependencies": {
     "polymer": "Polymer/polymer",
     "polymer-test-tools": "Polymer/polymer-test-tools",
-    "google-sheets": "GoogleWebComponents/google-sheets",
+    "google-sheets": "GoogleWebComponents/google-sheets#master",
     "sprintf": "~1.0.0",
     "paper-input":"Polymer/paper-input",
     "core-header-panel":"Polymer/core-header-panel",
