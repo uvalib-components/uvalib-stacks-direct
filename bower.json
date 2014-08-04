@@ -1,0 +1,7 @@
+{
+  "name": "uvalib-stacks-direct#gh-pages",
+  "private": true,
+  "dependencies": {
+    "uvalib-stacks-direct": "uvalib-components/uvalib-stacks-direct#master"
+  }
+}

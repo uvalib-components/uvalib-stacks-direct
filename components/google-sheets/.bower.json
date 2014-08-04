@@ -1,0 +1,42 @@
+{
+  "name": "google-sheets",
+  "private": false,
+  "homepage": "http://googlewebcomponents.github.io/google-sheets",
+  "description": "Web components to interact with Google Sheets",
+  "main": "google-sheets.html",
+  "authors": [
+    "Eric Bidelman <ebidel@gmail.com>"
+  ],
+  "license": "Apache2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "../"
+  ],
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "spreadsheets",
+    "google"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "google-apis": "GoogleWebComponents/google-apis#master",
+    "google-signin": "GoogleWebComponents/google-signin#master",
+    "core-ajax": "Polymer/core-ajax#master",
+    "google-map": "GoogleWebComponents/google-map#master"
+  },
+  "_release": "aef628312b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "aef628312bd8d76fbce4a001d2ca0ca80e31013e"
+  },
+  "_source": "git://github.com/GoogleWebComponents/google-sheets.git",
+  "_target": "master",
+  "_originalSource": "GoogleWebComponents/google-sheets"
+}
