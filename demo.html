@@ -27,77 +27,64 @@
     }
 
   </style>
-
-  <polymer-element name="direct-demo" assetpath="" attributes="">
-  	<template>
-  		    <style>    
-		    	:host {
-        			position: absolute;
-        			width: 100%;
-        			height: 100%;
-        			box-sizing: border-box;
-      			}
-      			#core_scaffold {
-        			position: absolute;
-        			top: 0px;
-        			right: 0px;
-        			bottom: 0px;
-        			left: 0px;
-      			}
-      			#core_header_panel {
-        			background-color: rgb(255, 255, 255);
-      			}
-      			#core_toolbar {
-        			color: rgb(255, 255, 255);
-        			background-color: rgb(79, 125, 201);
-      			}
-      			#section {
-        			width: 100%;
-        			height: 630px;
-        			border: 5px solid rgb(204, 204, 204);
-      			}
-      			paper-input {
-      				width: 90%;
-      			}
-    	</style>
-
-  		<uvalib-stacks-direct callnumber="{{callnum}}" desttitle="{{desttitle}}" floor="{{floor}}" area="{{area}}" direct="{{direct}}"></uvalib-stacks-direct>
-
-  		<core-scaffold id="core_scaffold">
-      		<core-header-panel mode="seamed" id="core_header_panel" navigation flex>
-        		<core-toolbar id="core_toolbar"></core-toolbar>
-        		<section id="section" layout vertical>
-          			<section id="section1" flex relative>
-						
-						<paper-input label="Callnumber" floatinglabel value="{{callnum}}"></paper-input><br>
-
-          			</section>
-        		</section>
-      		</core-header-panel>
-      		<div id="div" tool>uvalib-stacks-direct element demo</div>
-      		<div id="main">
-      			<dl>
-      				<dt>title</dt><dd>{{desttitle}}</dd>
-      				<dt>floor</dt><dd>{{floor}}</dd>
-      				<dt>area</dt><dd>{{area}}</dd>
-      				<dt>direct</dt><dd>{{direct}}</dd>
-      			</dl>
-  			</div>
-    	</core-scaffold>
-
-  	</template>
-  	<script>
-  		Polymer('direct-demo',{
-  			includeFacets: '{"library_facet":["Alderman"],"format_facet":["Book", "Broadside", "Journal Magazine", "Large Print", "Manuscript", "Map", "Microform", "Mixed Materials", "Newspaper", "Other Media", "Photographs", "Physical Object", "Print", "Thesis%2FDissertation"]}',
-  			count:10,
-  			advanced:false
-  		});
-  	</script>
-  </polymer-element>
+            <style>    
+          :host {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+            }
+            #core_scaffold {
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              bottom: 0px;
+              left: 0px;
+            }
+            #core_header_panel {
+              background-color: rgb(255, 255, 255);
+            }
+            #core_toolbar {
+              color: rgb(255, 255, 255);
+              background-color: rgb(79, 125, 201);
+            }
+            #section {
+              width: 100%;
+              height: 630px;
+              border: 5px solid rgb(204, 204, 204);
+            }
+            paper-input {
+              width: 90%;
+            }
+      </style>
 </head>
 <body unresolved>
 
-  <direct-demo foobar="hello"></direct-demo>
+  <template is="auto-binding">
+      <uvalib-stacks-direct callnumber="{{callnum}}" desttitle="{{desttitle}}" floor="{{floor}}" area="{{area}}" direct="{{direct}}"></uvalib-stacks-direct>
+
+      <core-scaffold id="core_scaffold">
+          <core-header-panel mode="seamed" id="core_header_panel" navigation flex>
+            <core-toolbar id="core_toolbar"></core-toolbar>
+            <section id="section" layout vertical>
+                <section id="section1" flex relative>
+            
+            <paper-input label="Callnumber" floatinglabel value="{{callnum}}"></paper-input><br>
+
+                </section>
+            </section>
+          </core-header-panel>
+          <div id="div" tool>uvalib-stacks-direct element demo</div>
+          <div id="main">
+            <dl>
+              <dt>title</dt><dd>{{desttitle}}</dd>
+              <dt>floor</dt><dd>{{floor}}</dd>
+              <dt>area</dt><dd>{{area}}</dd>
+              <dt>direct</dt><dd>{{direct}}</dd>
+            </dl>
+        </div>
+      </core-scaffold>
+  </template>
 
 </body>
 </html>
